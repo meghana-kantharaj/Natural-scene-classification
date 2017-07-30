@@ -1,0 +1,45 @@
+{
+"layers" : [
+        ('ElasticLayer', {
+            }),
+        ('ConvLayer', {
+            'num_maps'      :4,
+            'filter_sz'     :3,
+            'stride'        :1,
+            'actvn'         :"relu50",
+            }),
+        ('PoolLayer', {
+            'pool_sz'       :2,
+            }),
+        ('ConvLayer', {
+            'num_maps'      :20,
+            'filter_sz'     :3,
+            'stride'        :1,
+            'actvn'         :"relu10",
+            }),
+        ('PoolLayer', {
+            'pool_sz'       :2,
+            }),
+        ('HiddenLayer', {
+            'n_out'         :20,
+            'pdrop'         :.001,
+            'reg'           : {'L2':.001, 'maxnorm':0},
+            }),
+        ('SoftmaxLayer', {
+            'n_out'         :4,
+            'reg'           : {'L2':.001, 'maxnorm':0},
+            }),
+],
+
+"training_params" : {
+    'SEED' : 545555,
+    'BATCH_SZ'   :20,
+    'NUM_EPOCHS' : 10,
+
+    'EPOCHS_TO_TEST' : 1,
+    'TEST_SAMP_SZ': 700,
+
+    'INIT_LEARNING_RATE': .00009,
+    'EPOCHS_TO_HALF_RATE':  1,
+},
+}
