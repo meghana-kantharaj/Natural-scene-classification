@@ -1,1 +1,61 @@
-pickle files of dataset
+###############################################
+scenes8.pkl
+classes:
+	'Opencountry':		0, 
+	'coast':			1, 
+	'forest':			2, 
+	'highway':			3, 
+	'inside_city':		4, 
+	'mountain':			5, 
+	'street':			6, 
+	'tallbuilding':		7
+
+Opencountry 	: 	820
+street 			: 	584
+forest 			:	656
+highway 		:	520
+coast 			:	720
+mountain 		:	748
+tallbuilding 	:	712
+inside_city 	:	616
+
+5376 images
+4032 training[75%]
+1344 testing [25%]
+###############################################
+scenes6.pkl
+classes:
+	'Opencountry':		0,
+	'coast':			1, 
+	'forest':			2, 
+	'highway':			3,  
+	'mountain':			4,  
+	'tallbuilding':		5
+
+highway 		:	520
+tallbuilding 	: 	712
+forest 			:	656
+coast 			:	720
+mountain 		:	748
+Opencountry 	:	820
+
+4176 images
+3132 training[75%]
+1044 testing [25%]
+###############################################
+scenes4.pkl
+classes:
+	'coast':			0, 
+	'forest':			1,  
+	'mountain':			2,  
+	'tallbuilding':		3
+
+mountain 		:	748
+tallbuilding 	:	712
+forest 			:	656
+coast 			:	720
+
+2836 images
+2127 training[75%]
+709 testing [25%]
+###############################################
